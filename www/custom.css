@@ -1,2 +1,19 @@
 /* custom css for application */
 
+.mainheader {
+  height: 100px;
+}
+
+
+.mainheader .logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.skinblue {
+  background-color: #222324;
+}
+
+.sidebar-menu {
+  background-color: #222324;
+}
