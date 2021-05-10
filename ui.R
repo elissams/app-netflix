@@ -20,7 +20,9 @@ shinyUI(
         sidebarMenu(
             menuItem("Dashboard", tabName = "Dashboard", icon = icon("dashboard")),
             menuItem("Reitingud", tabName = "Reitingud", icon = icon("chart-line")),
-            menuItem("Netflix originals", tabName = "Originaalid", icon = icon("chart-line"))
+            menuItem("New on Netflix", tabName = "New", icon = icon("exclamation")),
+            menuItem("Netflix originals", tabName = "Originaalid", icon = icon("video")),
+            menuItem("TV Shows", tabName = "TV", icon = icon("tv"))
         )
     ),
     dashboardBody(
@@ -29,7 +31,7 @@ shinyUI(
         ),
         tabItems(
             tabItem(
-                "Dashboard",
+                "New",
                 box(width = 12,
                     solidHeader = T,
                     color = "maroon",
@@ -37,7 +39,7 @@ shinyUI(
                     dataTableOutput("NewonNetflix_table")),
                 ),
             tabItem(
-                "Reitingud",
+                "TV",
                 box(width = 12,
                     solidHeader = T,
                     color = "maroon",
