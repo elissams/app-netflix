@@ -1,12 +1,20 @@
 
 ## server
 
+# Setting up workspace, install 'rstudioapi' if using for first time
+#install.packages('rstudioapi')
+setwd(dirname(rstudioapi::getActiveDocumentContext()[[2]]))
+
 
 
 library(shiny)
 
-# Define server logic required to draw a histogram
-shinyServer(function(input, output) {
+
+
+
+
+# Define server logic
+shinyServer(function(input, output, session) {
 
     output$distPlot <- renderPlot({
 
