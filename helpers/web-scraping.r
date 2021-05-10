@@ -85,6 +85,26 @@ bestmovies_table <- bestmovies_table %>%
   mutate_at("ranking", as.numeric)
 
 
+#100 Best IMDB Rated TV shows in Estonia ----
+html_bestTVshows <-  'https://www.flixwatch.co/lists/100-best-imdb-rated-tv-shows-on-netflix-estonia/'
+
+bestTVshows <- read_html(html_bestTVshows)
+
+headlines <- bestTVshows %>% 
+  html_nodes('.amp-wp-67fc16d') %>% 
+  html_text()
+
+#Creating table
+bestTVshows_table <- cbind(data.frame(headlines))
+bestTVshows_table <- bestTVshows_table %>% 
+  mutate(ranking = rownames(.)) %>% #make index as column
+  separate(headlines, into = c("title", "year"), sep = -6) %>% #get year from headline
+  mutate(year = str_replace(year, "\\(", "")) %>% #clean string
+  mutate(year = str_replace(year, "\\)", "")) %>% #clean string
+  separate(title, into = c("title", "toBeDeleted"), sep = -1) %>%  #using this to remove last char that was not whitespace
+  select(-toBeDeleted) %>% 
+  mutate_at("year", as.numeric) %>% 
+  mutate_at("ranking", as.numeric)
 #Get IMDB ratings and genres ----
 html_start <- 'https://www.imdb.com/search/title/?companies=co0144901&'
 html_end1 <- 'ref_=adv_prv'
