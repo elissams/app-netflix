@@ -24,6 +24,14 @@ shinyUI(
     dashboardBody(
         tags$head(
             tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
+        ),
+        fluidRow(
+            box(width = 12,
+                solidHeader = T,
+                color = "maroon",
+                title = "100 Best TV Shows in Estonia",
+                dataTableOutput("TV_table")
+            ),
         )
     )
 ))
