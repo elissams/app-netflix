@@ -185,6 +185,35 @@ for (index in 1:length(getIndices)) {
 
 imdb_table2 <- cbind(data.frame(all_titles), data.frame(all_genres), data.frame(all_ratings))
 
+#Add IMDB info to titles that were not in scraped data
+
+titles <- c("Death Note", "Marvel’s Daredevil", "Leyla and Mecnun", "Money Heist (La casa de papel)", "Marvel’s The Punisher", "Fullmetal Alchemist: Brotherhood",
+            "One Punch Man", "Monty Python’s Flying Circus", "Paranormal (Ma Waraa Al Tabiaa)", "College Romance", "MindHunter", "Marvel’s Jessica Jones", "Ash vs. Evil Dead",
+            "Humsafar", "Zindagi Gulzar Hai", "The Assassination of Gianni Versace", "DOTA: Dragon’s Blood", "The Originals", "Young Justice", "46", "How to Sell Drugs Online (Fast)", 
+            "Neon Genesis Evangelion", "Pablo Escobar, el patron del mal", "The Dark Crystal: Age of Resistance", "Queer Eye", "Dirk Gently’s Holistic Detective Agency", "Erased", 
+            "Anne with an E", "Code Geass: Lelouch of the Rebellion", "Borgen", "Puffin Rock", "Derek", "Lilyhammer")
+genres <- c("Anime", "Action, Crime", "Comedy", "Crime, Thriller", "Action, Crime", "Anime", "Anime", "Comedy", "Horror", "Comedy, Romance", "Crime, Drama", "Action, Fantasy", "Action, Comedy, Horror", 
+            "Drama, Romance", "Romance", "Crime, Drama", "Action, Anime", "Fantasy, Horror", "Animation, Family", "Crime, Drama", "Comedy, Crime", "Action, Anime", "Crime, Drama", "Adventure, Family, Fantasy", 
+            "Reality TV", "Comedy, Fantasy", "Action, Anime", "Drama", "Action, Anime", "Drama", "Animation, Family", "Comedy, Drama", "Crime, Drama")
+ratings <- c(9, 8.7, 9.2, 8.6, 8.6, 9.1, 9, 8.9, 9.2, 9.1, 8.7, 8.2, 8.6, 9.1, 9, 8.5, 8.4, 8.3, 8.7, 8.7, 8.6, 8.6, 8.6, 8.5, 8.6, 8.3, 8.6, 8.5, 8.6, 8.5, 9, 8, 8)
+
+imdb_table3 <- cbind(data.frame(titles), data.frame(genres), data.frame(ratings))
+
+titles <- c("Our Planet", "David Attenborough: A Life on Our Planet", "Making a Murderer", "The Last Dance", "Beasts of No Nation", "Klaus", "Dave Chappelle: Sticks and Stones", 
+            "Dragons: Race to the Edge", "Okja", "F is for Family", "Happy!", "Divines", "ROMA", "Trollhunters", "The Fundamentals of Caring", "Black Mirror: Bandersnatch", "The Get Down", 
+            "Voltron: Legendary Defender", "Aunty Donna’s Big Ol’ House of Fun", "Don’t F**k with Cats: Hunting an Internet Killer", "Nobel", "Mosul", "The Seven Deadly Sins", "Carmen Sandiego", 
+            "The Siege of Jadotville", "13TH", "American Vandal", "Julie’s Greenroom", "If Anything Happens I Love You")
+
+genres <- c("Documentary, Family", "Documentary", "Crime, Documentary", "Documentary, Sport", "Drama, War", "Animation, Family", "Comedy, Stand-Up Comedy", "Animation, Family", "Action, Adventure, Sci-Fi", 
+            "Animation, Comedy", "Comedy, Crime, Fantasy", "Drama", "Drama", "Animation, Family", "Comedy, Drama", "Mystery, Sci-Fi, Thriller", "Drama, Music", "Animation, Family", "Comedy", "Crime, Documentary", 
+            "Thriller", "Action, War", "Anime", "Animation, Family", "Drama, War", "Crime, Documentary", "Drama", "Family", "Drama")
+
+ratings <- c(9.8, 9.2, 8.7, 9.7, 7.8, 8.2, 8.5, 8.5, 8, 8, 8.3, 7.5, 8.0, 8.5, 7.4, 7.4, 8.4, 8.4, 8.8, 8.1, 8.3, 7.3, 8.3, 8.3, 7.3, 8.2, 8.2, 8.7, 8.1)
+
+imdb_table4 <- cbind(data.frame(titles), data.frame(genres), data.frame(ratings))
+
+imdb_table3 <- rbind(imdb_table3, imdb_table4)
+
 #Combining data
 
 imdb_table2 <- imdb_table2 %>% 
@@ -193,6 +222,23 @@ imdb_table2 <- imdb_table2 %>%
     genre = all_genres,
     rating = all_ratings
   )
+
+imdb_table3 <- imdb_table3 %>% 
+  rename(
+    title = titles,
+    genre = genres,
+    rating = ratings
+  )
+
+imdb_table2 <- rbind(imdb_table2, imdb_table3)
+
+#Clean imdb table
+
+imdb_table2 <- imdb_table2 %>% 
+  mutate_at("rating", as.numeric) %>% 
+  mutate(genre = trimws(genre, which = c("both", "left", "right"), whitespace = "[ \t\r\n]"))
+
+#Join datasets
 
 bestnetflixoriginals_table <- bestnetflixoriginals_table %>% 
   left_join(imdb_table2)
