@@ -1,19 +1,24 @@
 /* custom css for application */
 
-.mainheader {
+
+.main-header .logo {
   height: 100px;
+  padding-top: 10px;
 }
 
-
-.mainheader .logo {
-  padding-top: 40px;
-  padding-bottom: 40px;
+#sidebarCollapsed {
+  position: fixed;
+  top: 50px;
 }
 
-.skinblue {
+.navbar-static-top {
   background-color: #222324;
 }
 
 .sidebar-menu {
+  background-color: #222324;
+}
+
+.content-wrapper {
   background-color: #222324;
 }
