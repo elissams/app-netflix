@@ -3,6 +3,7 @@
 
 library(shiny)
 library(shinydashboard)
+library(DT)
 
 
 #title logo
@@ -18,21 +19,42 @@ shinyUI(
     dashboardSidebar(
         sidebarMenu(
             menuItem("Dashboard", tabName = "Dashboard", icon = icon("dashboard")),
-            menuItem("Reitingud", tabName = "Reitingud", icon = icon("chart-line"))
+            menuItem("Reitingud", tabName = "Reitingud", icon = icon("chart-line")),
+            menuItem("Netflix originals", tabName = "Originaalid", icon = icon("chart-line"))
         )
     ),
     dashboardBody(
         tags$head(
             tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
         ),
-        fluidRow(
-            box(width = 12,
-                solidHeader = T,
-                color = "maroon",
-                title = "100 Best TV Shows in Estonia",
-                dataTableOutput("TV_table")
-            ),
+        tabItems(
+            tabItem(
+                "Dashboard",
+                box(width = 12,
+                    solidHeader = T,
+                    color = "maroon",
+                    title = "New on Netflix in Estonia",
+                    dataTableOutput("NewonNetflix_table")),
+                ),
+            tabItem(
+                "Reitingud",
+                box(width = 12,
+                    solidHeader = T,
+                    color = "maroon",
+                    title = "100 Best TV Shows in Estonia",
+                    dataTableOutput("TV_table")),
+                ),
+            tabItem(
+                "Originaalid",
+                box(width = 12,
+                    solidHeader = T,
+                    color = "maroon",
+                    title = "100 Best Netflix Originals in Estonia",
+                    dataTableOutput("original_table")),
+                )
+                
+            )
         )
     )
-))
+)
 
