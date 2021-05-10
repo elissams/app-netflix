@@ -22,7 +22,8 @@ shinyUI(
             menuItem("Reitingud", tabName = "Reitingud", icon = icon("chart-line")),
             menuItem("New on Netflix", tabName = "New", icon = icon("exclamation")),
             menuItem("Netflix originals", tabName = "Originaalid", icon = icon("video")),
-            menuItem("TV Shows", tabName = "TV", icon = icon("tv"))
+            menuItem("TV Shows", tabName = "TV", icon = icon("tv")),
+            menuItem("About", tabName = "About", icon = icon("info-circle"))
         )
     ),
     dashboardBody(
@@ -53,6 +54,16 @@ shinyUI(
                     color = "maroon",
                     title = "100 Best Netflix Originals in Estonia",
                     dataTableOutput("original_table")),
+                ),
+            tabItem(
+                "About",
+                box(width = 12,
+                    solidHeader = T,
+                    status = "danger",
+                    title = "About data",
+                    p("Andmed on saadud veebikraapimise teel kahelt erinevalt veebilehelt: FlixWatch ja IMDB."),
+                    p("FlixWatch lehekülg: https://www.flixwatch.co/"),
+                    p("IMDB lehekülg: https://www.imdb.com/search/title/?companies=co0144901&ref_=adv_prv")),
                 )
                 
             )
