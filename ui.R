@@ -77,7 +77,7 @@ shinyUI(
                                h1("Parimad Netflixi originaalsed filmid ja TV-seriaalid")
                                
                            ),
-                           box(width = NULL, height = 800, background ="black",
+                           box(width = NULL, height = 840, background ="black",
                                plotOutput('origline')
                            )
                         
@@ -86,11 +86,14 @@ shinyUI(
                            box(width = NULL, background ="black", title = "Sarjade ja filmide keskmised aastate lõikes",
                                plotOutput('origtime')
                            ),
-                           box(width = NULL, background ="black",
-                               
+                           box(width = NULL, background ="black",title = "Populaarseimad žanrid valitud aastate lõikes",
+                               valueBoxOutput("zanr1"),
+                               valueBoxOutput("zanr2"),
+                               valueBoxOutput("zanr3")
                            ),
                            box(width = NULL, background ="black",
-                               sliderInput("top", "Vali aastate vahemik", min=2013, max=2021, value=c(2013,2021), dragRange = TRUE)
+                               sliderInput("aastad1", "Vali aastate vahemik", min=2013, max=2021, value=c(2013,2021), dragRange = TRUE),
+                               sliderInput("kirjed1", "Vali kirjete arv", min=5, max=100, value=20)
                            )
                     )
                 )
@@ -102,20 +105,23 @@ shinyUI(
                 tabName = 'tv',
                 fluidRow(
                     column(width = 6,
-                           box( width = NULL, background ="black"
+                           box( width = NULL, background ="black",
+                                h1("Parimad TV-seriaalid")
                                 
                            ),
-                           box(width = NULL, background ="black"
-                               
+                           box( width = NULL, height = 840, background ="black",
+                                plotOutput('tvline')    
                            )
-                           
                     ),
                     column(width = 6,
-                           box(width = NULL, background ="black",
-                               plotOutput('tvline')
+                           box(width = NULL, background ="black",title = "Populaarseimad žanrid valitud aastate lõikes",
+                               valueBoxOutput("zanr4"),
+                               valueBoxOutput("zanr5"),
+                               valueBoxOutput("zanr6")
                            ),
-                           box(width = NULL, background ="black"
-                               
+                           box(width = NULL, background ="black",
+                               sliderInput("aastad2", "Vali aastate vahemik", min=2013, max=2021, value=c(2013,2021), dragRange = TRUE),
+                               sliderInput("kirjed2", "Vali kirjete arv", min=5, max=100, value=20)
                            )
                     )
                 )
@@ -124,45 +130,4 @@ shinyUI(
     )
 )
 )
-# 
-#         tabItems(
-#             tabItem(
-#                 "New",
-#                 box(width = 12,
-#                     solidHeader = T,
-#                     color = "maroon",
-#                     title = "New on Netflix in Estonia",
-#                     dataTableOutput("NewonNetflix_table")),
-#                 ),
-#             tabItem(
-#                 "TV",
-#                 box(width = 12,
-#                     solidHeader = T,
-#                     color = "maroon",
-#                     title = "100 Best TV Shows in Estonia",
-#                     dataTableOutput("TV_table")),
-#                 ),
-#             tabItem(
-#                 "Originaalid",
-#                 box(width = 12,
-#                     solidHeader = T,
-#                     color = "maroon",
-#                     title = "100 Best Netflix Originals in Estonia",
-#                     dataTableOutput("original_table")),
-#                 ),
-#             tabItem(
-#                 "About",
-#                 box(width = 12,
-#                     solidHeader = T,
-#                     status = "danger",
-#                     title = "About data",
-#                     p("Andmed on saadud veebikraapimise teel kahelt erinevalt veebilehelt: FlixWatch ja IMDB."),
-#                     p("FlixWatch lehekülg: https://www.flixwatch.co/"),
-#                     p("IMDB lehekülg: https://www.imdb.com/search/title/?companies=co0144901&ref_=adv_prv")),
-#                 )
-#                 
-#             )
-#         )
-#     )
-# )
-# 
+

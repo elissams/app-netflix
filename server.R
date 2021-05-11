@@ -39,8 +39,8 @@ tvline <- ggplot(bestTVshows_table, aes(reorder(title, -rating), rating)) +
 # funktsioonid
 
 
-linepl <- function(andmed, minAasta = 2013, maxAasta=2021, maxKirjed = 20){
-    andmed <- andmed %>% top_n(maxKirjed)
+linepl <- function(andmed, minAasta, maxAasta, maxKirjed){
+    andmed <- andmed %>% filter(year %in% seq(minAasta, maxAasta, by=1))%>% top_n(maxKirjed)
     
     origline <- ggplot(andmed, aes(reorder(title, rating), rating)) + 
         geom_segment(aes(x = reorder(title, -rating), xend =reorder(title, -rating), y=0, yend=rating), color = '#147ae0') + 
@@ -51,6 +51,22 @@ linepl <- function(andmed, minAasta = 2013, maxAasta=2021, maxKirjed = 20){
     
 }
 
+zanrid <- function(andmed, minAasta, maxAasta) {
+    andmed = andmed %>% filter(year %in% seq(minAasta, maxAasta, by=1))
+    t <- paste(andmed$genre, collapse = ', ')
+    split <- strsplit(t, ", ")
+    table <- table(split)
+    tabeldf <- as.data.frame(table)
+    tabeldf <- tabeldf %>% filter()  %>% arrange(desc(Freq))
+    return(tabeldf)
+}
+
+
+t <- paste(bestnetflixoriginals_table$genre, collapse = ', ')
+split <- strsplit(t, ", ")
+table <- table(split)
+tabeldf <- as.data.frame(table)
+tabeldf <- tabeldf %>% arrange(desc(Freq))
 
 # Define server logic
 shinyServer(function(input, output, session) {
@@ -61,7 +77,7 @@ shinyServer(function(input, output, session) {
 
 
     output$movies_table = renderDataTable({
-        datatable(bestmovies_table, colnames = c("Title" = "title", "Year" = "year"), filter = "top")}) 
+        datatable(bestmovies_table, colnames = c("Title" = "title", "Year" = "year"), filter = "top")}, height = 800) 
     
     output$TV_table = renderDataTable({
     datatable(bestTVshows_table, colnames = c("Title" = "title", "Year" = "year", "IMDB rating" = "rating", "Genre" = "genre"), filter = "top") 
@@ -72,11 +88,62 @@ shinyServer(function(input, output, session) {
 
     })
 
-    
+# graafikud
 
-output$origline <- renderPlot({linepl(bestnetflixoriginals_table)}, height = 800)
+output$origline <- renderPlot({linepl(bestnetflixoriginals_table,input$aastad1[1], input$aastad1[2] ,maxKirjed=input$kirjed1)}, height = 800)
 
 output$origtime <- renderPlot({origtime})
 
-output$tvline <- renderPlot({tvline})
+output$tvline <- renderPlot({linepl(bestTVshows_table, input$aastad2[1], input$aastad2[2] ,maxKirjed=input$kirjed2)}, height = 800)
+
+
+
+
+
+
+
+# value boxes
+output$zanr1 <- renderValueBox({
+    valueBox(
+        zanrid(bestnetflixoriginals_table, input$aastad1[1], input$aastad1[2])[1,1], "žanr #1", icon = icon("film"),
+        color = "lime"
+    )
+})
+
+output$zanr2 <- renderValueBox({
+    valueBox(
+        zanrid(bestnetflixoriginals_table, input$aastad1[1], input$aastad1[2])[2,1], "žanr #2", icon = icon("film"),
+        color = "purple"
+    )
+})
+
+output$zanr3 <- renderValueBox({
+    valueBox(
+        zanrid(bestnetflixoriginals_table, input$aastad1[1], input$aastad1[2])[3,1], "žanr #3", icon = icon("film"),
+        color = "fuchsia"
+    )
+})
+
+
+# value boxes best TV shows
+output$zanr4 <- renderValueBox({
+    valueBox(
+        zanrid(bestTVshows_table, input$aastad2[1], input$aastad2[2])[1,1], "žanr #1", icon = icon("film"),
+        color = "lime"
+    )
+})
+
+output$zanr5 <- renderValueBox({
+    valueBox(
+        zanrid(bestTVshows_table, input$aastad2[1], input$aastad2[2])[2,1], "žanr #2", icon = icon("film"),
+        color = "purple"
+    )
+})
+
+output$zanr6 <- renderValueBox({
+    valueBox(
+        zanrid(bestTVshows_table, input$aastad2[1], input$aastad2[2])[3,1], "žanr #3", icon = icon("film"),
+        color = "fuchsia"
+    )
+})
 })

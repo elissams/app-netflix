@@ -1,0 +1,550 @@
+"title","genre","rating"
+"Shadow and Bone","Action, Adventure, Drama",7.9
+"The Mitchells vs the Machines","Animation, Adventure, Comedy",7.9
+"Jupiter's Legacy","Action, Adventure, Drama",6.9
+"Things Heard & Seen","Drama, Horror, Mystery",5.3
+"Line of Duty","Crime, Drama, Mystery",8.7
+"El inocente","Crime, Drama, Mystery",8
+"Grey's Anatomy","Drama, Romance",7.6
+"The Walking Dead","Drama, Horror, Thriller",8.2
+"Stowaway","Drama, Sci-Fi, Thriller",5.6
+"The Blacklist","Crime, Drama, Mystery",8
+"Stranger Things","Drama, Fantasy, Horror",8.7
+"Peaky Blinders","Crime, Drama",8.8
+"Lucifer","Crime, Drama, Fantasy",8.1
+"Breaking Bad","Crime, Drama, Thriller",9.5
+"The Crown","Biography, Drama, History",8.7
+"The Serpent","Crime, Drama, Thriller",7.7
+"Vikings","Action, Adventure, Drama",8.5
+"Outlander","Drama, Fantasy, Romance",8.4
+"Sexify","Comedy, Drama",6.6
+"Shingeki no kyojin","Animation, Action, Adventure",8.9
+"Schitt's Creek","Comedy",8.5
+"Love and Monsters","Action, Adventure, Comedy",7
+"NCIS: Naval Criminal Investigative Service","Action, Crime, Drama",7.7
+"The Flash","Action, Adventure, Drama",7.7
+"Dexter","Crime, Drama, Mystery",8.6
+"Friends","Comedy, Romance",8.9
+"Modern Family","Comedy, Drama, Romance",8.4
+"Supernatural","Drama, Fantasy, Horror",8.4
+"La casa de papel","Action, Crime, Mystery",8.3
+"Better Call Saul","Crime, Drama",8.7
+"New Amsterdam","Drama",8.1
+"Brooklyn Nine-Nine","Comedy, Crime",8.4
+"Pose","Drama",8.6
+"Fargo","Crime, Drama, Thriller",8.9
+"The Last Kingdom","Action, Drama, History",8.4
+"The 100","Drama, Mystery, Sci-Fi",7.6
+"American Horror Story","Drama, Horror, Thriller",8
+"Black Mirror","Drama, Sci-Fi, Thriller",8.8
+"Yasuke","Animation, Action, Adventure",6.3
+"The Witcher","Action, Adventure, Fantasy",8.2
+"Star Wars: The Clone Wars","Animation, Action, Adventure",8.3
+"Ozark","Crime, Drama, Thriller",8.4
+"Sons of Anarchy","Crime, Drama, Thriller",8.5
+"The Vampire Diaries","Drama, Fantasy, Horror",7.7
+"How I Met Your Mother","Comedy, Romance",8.3
+"RH Project","Documentary, Crime, History",7.2
+"Bridgerton","Drama, Romance",7.2
+"Legends of Tomorrow","Action, Adventure, Drama",6.8
+"Suits","Comedy, Drama",8.5
+"Love, Death and Robots","Animation, Short, Comedy",8.5
+"The Queen’s Gambit","Drama",8.6
+"Supergirl","Action, Adventure, Drama",6.2
+"Good Girls","Comedy, Crime, Drama",7.8
+"Community","Comedy",8.5
+"Ginny & Georgia","Comedy, Drama",7.4
+"365 dni","Drama, Romance",3.2
+"Homeland","Crime, Drama, Mystery",8.3
+"The Expanse","Drama, Mystery, Sci-Fi",8.5
+"Selena: The Series","Biography, Drama, Music",6.7
+"Rick and Morty","Animation, Adventure, Comedy",9.2
+"Blue Bloods","Crime, Drama, Mystery",7.6
+"Demon Slayer: Kimetsu No Yaiba","Animation, Action, Fantasy",8.7
+"New Girl","Comedy",7.7
+"Cobra Kai","Action, Comedy, Drama",8.6
+"Dark","Crime, Drama, Mystery",8.8
+"Agents of S.H.I.E.L.D.","Action, Adventure, Drama",7.5
+"Thunder Force","Action, Adventure, Comedy",4.4
+"Gilmore Girls","Comedy, Drama",8.1
+"The Trial of the Chicago 7","Drama, History, Thriller",7.8
+"The Sinner","Crime, Drama, Mystery",7.9
+"Queen of the South","Action, Crime, Drama",7.9
+"Family Guy","Animation, Comedy",8.1
+"Fatma","Crime, Drama, Thriller",7.5
+"Riverdale","Crime, Drama, Mystery",6.9
+"The Irregulars","Crime, Drama, Fantasy",5.8
+"Sherlock","Crime, Drama, Mystery",9.1
+"Billions","Drama",8.4
+"Star Trek: The Next Generation","Action, Adventure, Mystery",8.6
+"Heartland","Drama, Family",8.4
+"Mad Men","Drama",8.6
+"Prison Break","Action, Crime, Drama",8.3
+"The Umbrella Academy","Action, Adventure, Comedy",8
+"The Punisher","Action, Crime, Drama",8.5
+"I Care a Lot","Comedy, Crime, Thriller",6.3
+"Once Upon a Time","Adventure, Fantasy, Romance",7.7
+"Binsenjo","Comedy, Crime, Romance",8.5
+"<U+00BF>Quién Mató a Sara?","Crime, Drama, Mystery",6.6
+"Sex Education","Comedy, Drama",8.3
+"Arrow","Action, Adventure, Crime",7.5
+"Colony","Action, Adventure, Drama",7.4
+"The Bold Type","Comedy, Drama",8
+"Titans","Action, Adventure, Crime",7.7
+"Snowpiercer","Action, Drama, Sci-Fi",6.9
+"Seinfeld","Comedy",8.8
+"Arrested Development","Comedy",8.7
+"Mank","Biography, Comedy, Drama",6.9
+"Miraculous: Tales of Ladybug & Cat Noir","Animation, Action, Adventure",7.7
+"Castlevania","Animation, Action, Adventure",8.2
+"The Lord of the Rings: The Fellowship of the Ring","Action, Adventure, Drama",8.8
+"Mindhunter","Crime, Drama, Thriller",8.6
+"Boku no h<U+00EE>r<U+00F4> akademia","Animation, Action, Adventure",8.5
+"Behind Her Eyes","Drama, Mystery, Thriller",7.2
+"NCIS Los Angeles","Action, Crime, Drama",6.7
+"BoJack Horseman","Animation, Comedy, Drama",8.7
+"Teen Wolf","Action, Drama, Fantasy",7.6
+"Run","Mystery, Thriller",6.7
+"My Octopus Teacher","Documentary",8.1
+"You","Crime, Drama, Romance",7.7
+"Hawaii Five-0","Action, Crime, Drama",7.3
+"Narcos","Biography, Crime, Drama",8.8
+"Orange Is the New Black","Comedy, Crime, Drama",8
+"Deadly Class","Action, Adventure, Comedy",7.6
+"StartUp","Crime, Thriller",8
+"Star Trek: Deep Space Nine","Action, Adventure, Drama",8
+"Daredevil","Action, Crime, Drama",8.6
+"The Good Place","Comedy, Drama, Fantasy",8.2
+"The Devil All the Time","Crime, Drama, Thriller",7.1
+"Lupin","Action, Crime, Drama",7.5
+"Star Trek: Discovery","Action, Adventure, Drama",7.2
+"The Circle","Game-Show, Reality-TV",7.4
+"Spartacus","Action, Adventure, Biography",8.5
+"Ma Rainey's Black Bottom","Drama, Music",7
+"Glee","Comedy, Drama, Music",6.7
+"News of the World","Action, Adventure, Drama",6.8
+"How to Get Away with Murder","Crime, Drama, Mystery",8.1
+"Broadchurch","Crime, Drama, Mystery",8.4
+"Gotham","Action, Crime, Drama",7.8
+"CSI: Crime Scene Investigation","Crime, Drama, Mystery",7.6
+"Twin Peaks","Crime, Drama, Mystery",8.8
+"Master of None","Comedy, Drama",8.3
+"The Killing","Crime, Drama, Mystery",8.2
+"Star Trek: Voyager","Action, Adventure, Sci-Fi",7.8
+"Hannibal","Crime, Drama, Horror",8.5
+"Dawson's Creek","Drama, Romance",6.6
+"Shtisel","Drama",8.6
+"Jujutsu Kaisen","Animation, Action, Adventure",8.7
+"South Park","Animation, Comedy",8.7
+"Avatar: The Last Airbender","Animation, Action, Adventure",9.2
+"When Calls the Heart","Drama, Family, Romance",8.1
+"House of Cards","Drama",8.7
+"The Departed","Crime, Drama, Thriller",8.5
+"The Dig","Biography, Drama, History",7.1
+"Emily in Paris","Comedy, Drama, Romance",7
+"Star Trek","Action, Adventure, Sci-Fi",8.3
+"Virgin River","Drama, Romance",7.5
+"Animal Kingdom","Crime, Drama",8.2
+"Gone Girl","Drama, Mystery, Thriller",8.1
+"Murder, She Wrote","Crime, Drama, Mystery",7
+"Monster","Crime, Drama",6.4
+"Dynasty","Drama",7.3
+"Élite","Crime, Drama, Thriller",7.6
+"The Americans","Crime, Drama, Mystery",8.4
+"Designated Survivor","Action, Drama, Mystery",7.5
+"It","Horror",7.3
+"Murdoch Mysteries","Crime, Drama, Mystery",8.1
+"The Kominsky Method","Comedy, Drama",8.2
+"Girl From Nowhere","Crime, Drama, Fantasy",7.7
+"Two Distant Strangers","Short, Drama, Sci-Fi",6.9
+"Captain America: Civil War","Action, Adventure, Sci-Fi",7.8
+"Spider-Man: Far from Home","Action, Adventure, Sci-Fi",7.5
+"13 Reasons Why","Drama, Mystery, Thriller",7.6
+"Arrival","Drama, Sci-Fi",7.9
+"Jurassic Park","Action, Adventure, Sci-Fi",8.1
+"Snabba Cash","Action, Crime, Drama",7.7
+"Pieces of a Woman","Drama",7.1
+"Altered Carbon","Action, Drama, Sci-Fi",8
+"The Lord of the Rings: The Return of the King","Action, Adventure, Drama",8.9
+"Firefly Lane","Drama, Romance",7.5
+"Fate: The Winx Saga","Action, Adventure, Drama",6.9
+"Baby Drivers","Action, Crime, Drama",7.6
+"Skins","Drama",8.2
+"300","Action, Drama",7.6
+"Spider-Man","Action, Adventure, Sci-Fi",7.3
+"Death Note: Desu n<U+00F4>to","Animation, Crime, Drama",9
+"Grace and Frankie","Comedy",8.3
+"The Haunting of Hill House","Drama, Horror, Mystery",8.6
+"Pretty Little Liars","Drama, Mystery, Romance",7.4
+"Black Sails","Adventure, Drama",8.2
+"Revenge","Drama, Mystery, Thriller",7.8
+"Gossip Girl","Drama, Romance",7.4
+"American Psycho","Comedy, Crime, Drama",7.6
+"The Irishman","Biography, Crime, Drama",7.8
+"Contratiempo","Crime, Drama, Mystery",8.1
+"The Whole Truth","Crime, Drama, Mystery",6.2
+"Jane the Virgin","Comedy",7.8
+"Moneyball","Biography, Drama, Sport",7.6
+"Luther","Crime, Drama, Mystery",8.5
+"Reign","Drama, Fantasy",7.5
+"White Collar","Comedy, Crime, Drama",8.2
+"Enterprise","Action, Adventure, Drama",7.5
+"Longmire","Action, Crime, Drama",8.3
+"Hillbilly Elegy","Drama",6.7
+"Bad Trip","Comedy",6.6
+"Keeping Up with the Kardashians","Drama, Family, Reality-TV",2.8
+"Honest Thief","Action, Crime, Drama",6
+"Jumanji: Welcome to the Jungle","Action, Adventure, Comedy",6.9
+"Venom","Action, Adventure, Sci-Fi",6.7
+"Archer","Animation, Action, Comedy",8.6
+"Bodyguard","Crime, Drama, Thriller",8.1
+"Freaks and Geeks","Comedy, Drama",8.8
+"Too Hot to Handle","Game-Show, Reality-TV, Romance",4.5
+"Snowpiercer","Action, Drama, Sci-Fi",7.1
+"Enola Holmes","Action, Adventure, Crime",6.6
+"Ray Donovan","Crime, Drama",8.3
+"Naruto","Animation, Action, Adventure",8.3
+"The Fall","Crime, Drama, Thriller",8.2
+"Bloodline","Drama, Thriller",7.9
+"Final Space","Animation, Action, Adventure",8.3
+"Hagane no renkinjutsushi","Animation, Action, Adventure",9.1
+"The Affair","Drama",7.9
+"Bates Motel","Drama, Horror, Mystery",8.1
+"The Hobbit: An Unexpected Journey","Adventure, Fantasy",7.8
+"Taxi Driver","Crime, Drama",8.2
+"Locke & Key","Drama, Fantasy, Horror",7.4
+"Batman v Superman: Dawn of Justice","Action, Adventure, Sci-Fi",6.4
+"Tropic Thunder","Action, Comedy, War",7
+"The Alienist","Crime, Drama, Mystery",7.7
+"Legally Blonde","Comedy, Romance",6.3
+"The White Tiger","Crime, Drama",7.1
+"The Water Man","Adventure, Drama, Family",5.8
+"The Tudors","Drama, History, Romance",8.1
+"Eurovision Song Contest: The Story of Fire Saga","Comedy, Music",6.5
+"Kill Bill: Vol. 1","Action, Crime, Drama",8.1
+"After Life","Comedy, Drama",8.4
+"American Crime Story","Biography, Crime, Drama",8.4
+"Narcos: Mexico","Crime, Drama",8.4
+"Spirited Away","Animation, Adventure, Family",8.6
+"Cheers","Comedy, Drama",7.8
+"Sicario","Action, Crime, Drama",7.6
+"Sense8","Drama, Mystery, Sci-Fi",8.3
+"Good Witch","Comedy, Drama, Fantasy",7.3
+"Concrete Cowboy","Drama",6.3
+"Uncut Gems","Crime, Drama, Thriller",7.4
+"Outer Banks","Action, Crime, Drama",7.6
+"Moxie","Comedy, Drama, Music",6.7
+"Travelers","Drama, Mystery, Sci-Fi",8.1
+"The King","Biography, Drama, History",7.2
+"Kim's Convenience","Comedy",8.2
+"The Lord of the Rings: The Two Towers","Action, Adventure, Drama",8.7
+"The Disciple","Drama, Music",7.2
+"Poldark","Drama, History, Romance",8.3
+"Head tüübid","Action, Comedy, Crime",7.4
+"Jessica Jones","Action, Crime, Drama",7.9
+"Dead to Me","Comedy, Drama",8
+"Black Lightning","Action, Drama, Sci-Fi",6.1
+"Anne","Drama, Family",8.7
+"Don't Breathe","Crime, Horror, Thriller",7.1
+"The One","Crime, Drama, Sci-Fi",6.6
+"The Shannara Chronicles","Adventure, Fantasy, Sci-Fi",7.2
+"Breach","Action, Sci-Fi",2.9
+"2001: Kosmoseodüsseia","Adventure, Sci-Fi",8.3
+"Grimm","Crime, Drama, Fantasy",7.8
+"Elementary","Crime, Drama, Mystery",7.9
+"Lost in Space","Adventure, Drama, Family",7.3
+"Kuutõusu kuningriik","Comedy, Drama, Romance",7.8
+"Kiired ja vihased 7","Action, Adventure, Thriller",7.1
+"Ratched","Crime, Drama, Mystery",7.3
+"Big Mouth","Animation, Comedy, Romance",8
+"Mees, kes jäi ellu","Action, Adventure, Drama",8
+"Rannavalve","Action, Comedy, Crime",5.5
+"Penny Dreadful","Drama, Fantasy, Horror",8.2
+"Chilling Adventures of Sabrina","Drama, Fantasy, Horror",7.5
+"Cursed","Adventure, Drama, Fantasy",5.9
+"Kaunitar ja koletis","Family, Fantasy, Musical",7.1
+"Dota: Dragon's Blood","Animation, Action, Adventure",8.1
+"Nüüd sa näed mind","Crime, Mystery, Thriller",7.3
+"Yes Day","Comedy, Family",5.7
+"Shadowhunters: The Mortal Instruments","Action, Drama, Fantasy",6.6
+"Nanatsu no taizai","Animation, Action, Adventure",8.1
+"Marcella","Crime, Drama, Mystery",7.4
+"Luis Miguel: La Serie","Biography, Drama, History",8.1
+"Below Deck","Reality-TV",7.3
+"Derry Girls","Comedy",8.4
+"Black Clover","Animation, Action, Adventure",8.1
+"The Good Wife","Crime, Drama, Mystery",8.3
+"Lõuad","Adventure, Thriller",8
+"Kong: Pealuu saar","Action, Adventure, Fantasy",6.6
+"The End of the F***ing World","Adventure, Comedy, Crime",8.1
+"Atypical","Comedy, Drama",8.3
+"300: Impeeriumi sünd","Action, Drama",6.2
+"Misfits","Comedy, Drama, Fantasy",8.2
+"The Old Guard","Action, Adventure, Fantasy",6.7
+"Grease","Musical, Romance",7.2
+"Yakusoku no Neverland","Animation, Adventure, Drama",8.6
+"The Midnight Sky","Drama, Fantasy, Sci-Fi",5.6
+"The IT Crowd","Comedy",8.5
+"Kuumad 70ndad","Comedy, Romance",8.1
+"Sinu nimi on...","Animation, Drama, Fantasy",8.4
+"Häving","Adventure, Drama, Horror",6.8
+"The Legend of Korra","Animation, Action, Adventure",8.4
+"The OA","Drama, Fantasy, Mystery",7.9
+"Outside the Wire","Action, Adventure, Fantasy",5.4
+"The Ranch","Comedy, Drama, Western",7.5
+"The Fresh Prince of Bel-Air","Comedy",7.9
+"Wind River","Crime, Drama, Mystery",7.7
+"Kuuvalgus","Drama",7.4
+"Polar","Action, Crime, Drama",6.3
+"Kariibi mere piraadid: Salazari kättemaks","Action, Adventure, Fantasy",6.5
+"Adventure Time","Animation, Short, Action",8.6
+"Kiired ja vihased 8","Action, Adventure, Crime",6.6
+"Orphan Black","Action, Drama, Sci-Fi",8.3
+"Oceani 8","Action, Comedy, Crime",6.9
+"Unbelievable","Crime, Drama",8.4
+"Bird Box","Horror, Sci-Fi",6.6
+"El hoyo","Horror, Sci-Fi, Thriller",7
+"The Haunting of Bly Manor","Drama, Horror, Mystery",7.4
+"Extraction","Action, Thriller",6.7
+"Medici","Biography, Drama, History",7.9
+"Ragnarok","Drama, Fantasy, Mystery",7.5
+"Kopp-kopp","Drama, Thriller",4.9
+"Into the Badlands","Action, Adventure, Drama",8
+"Ilmvõimatu","Drama, History, Thriller",7.6
+"Dirty John","Crime, Drama",7.2
+"Rebecca","Drama, Mystery, Romance",6
+"Willy Wonka & the Chocolate Factory","Family, Fantasy, Musical",7.8
+"Wentworth","Crime, Drama",8.6
+"Lumekuninganna ja igavene talv","Animation, Adventure, Comedy",7.4
+"Marriage Story","Comedy, Drama, Romance",7.9
+"Booksmart","Comedy",7.2
+"National Lampoon's Animal House","Comedy",7.5
+"Nakkus","Drama, Thriller",6.7
+"Top Boy","Crime, Drama, Thriller",8.4
+"I'm Thinking of Ending Things","Drama, Thriller",6.6
+"6 Underground","Action, Thriller",6.1
+"Clueless","Comedy, Romance",6.8
+"Californication","Comedy, Drama",8.3
+"Doktor Martin","Comedy, Drama, Romance",8.3
+"Charlie's Angels","Action, Adventure, Comedy",4.8
+"Kingdom","Drama",8.5
+"Country Comfort","Comedy, Drama, Family",6.9
+"Egiptuse jumalad","Action, Adventure, Fantasy",5.4
+"Muumia","Action, Adventure, Fantasy",5.4
+"Ash vs Evil Dead","Comedy, Horror",8.4
+"The Bad Batch","Action, Horror, Mystery",5.3
+"The Invitation","Drama, Mystery, Thriller",6.6
+"Homunculus","Drama, Fantasy, Mystery",5.7
+"Kolmas kivi päikesest","Comedy, Family, Sci-Fi",7.7
+"Scorpion","Action, Crime, Drama",7.1
+"The Ballad of Buster Scruggs","Comedy, Drama, Musical",7.3
+"Dead Poets Society","Comedy, Drama",8.1
+"Sa-rang-eui bul-sa-chak","Comedy, Romance",8.7
+"Haikyuu!!","Animation, Comedy, Drama",8.7
+"Manhunt","Biography, Crime, Drama",8.1
+"Trailer Park Boys","Comedy, Crime",8.5
+"Godless","Drama, Western",8.3
+"The Real Housewives of Beverly Hills","Reality-TV",5
+"El Camino: A Breaking Bad Movie","Action, Crime, Drama",7.3
+"Hauru no ugoku shiro","Animation, Adventure, Family",8.2
+"When They See Us","Biography, Crime, Drama",8.9
+"Full House","Comedy, Drama, Family",6.7
+"Shameless","Comedy, Crime, Drama",8
+"Palgamõrvari ihukaitsja","Action, Comedy, Crime",6.9
+"Will & Grace","Comedy, Romance",7.2
+"The Stranger","Crime, Drama, Mystery",7.3
+"Seaspiracy","Documentary, Adventure",8.2
+"Alice in Borderland","Action, Fantasy, Mystery",7.7
+"Fauda","Action, Drama, Thriller",8.2
+"Ema!","Drama, Horror, Mystery",6.6
+"Castle Rock","Drama, Fantasy, Horror",7.6
+"Daybreak","Action, Adventure, Comedy",6.7
+"Night in Paradise","Action, Crime, Drama",6.7
+"Sweet Magnolias","Drama, Romance",7.4
+"Lindmees ehk (võhiklikkuse ootamatu voorus)","Comedy, Drama",7.7
+"Rünnak Valgele Majale","Action, Drama, Thriller",6.4
+"iZombie","Comedy, Crime, Drama",7.8
+"Nashville","Drama, Music, Romance",7.7
+"High School DxD","Animation, Action, Comedy",7.6
+"A-Rühm","Action, Adventure, Thriller",6.7
+"Ajeeb Daastaans","Drama, Romance",6.7
+"The Dirt","Biography, Comedy, Drama",7
+"The Clovehitch Killer","Crime, Drama, Mystery",6.6
+"Unorthodox","Drama",8
+"GLOW","Comedy, Drama, Sport",8
+"Shooter","Action, Drama",7.5
+"Love","Comedy, Drama, Romance",7.7
+"Iron Fist","Action, Adventure, Crime",6.5
+"Äärmiselt nurjatu, uskumatult õel ja jäle","Biography, Crime, Drama",6.7
+"Russian Doll","Adventure, Comedy, Drama",7.9
+"Kill Bill - pruudi kättemaks, vol 2","Action, Crime, Thriller",8
+"Põgenemistuba","Action, Adventure, Horror",6.4
+"Dirk Gently's Holistic Detective Agency","Action, Adventure, Comedy",8.3
+"Disenchantment","Animation, Action, Adventure",7.2
+"Fractured","Mystery, Thriller",6.4
+"Dad Stop Embarrassing Me","Comedy, Family",4.1
+"We Can Be Heroes","Action, Comedy, Drama",4.7
+"A Week Away","Drama, Family, Musical",5.7
+"Spenser Confidential","Action, Comedy, Crime",6.2
+"Tribes of Europa","Action, Adventure, Drama",6.7
+"Nüüd sa näed mind 2","Action, Adventure, Comedy",6.5
+"A Series of Unfortunate Events","Adventure, Comedy, Drama",7.8
+"MILF","Comedy",4.7
+"Henry Danger","Action, Comedy, Family",5.6
+"This Is England","Crime, Drama",7.7
+"Timeless","Action, Adventure, Drama",7.7
+"In the Shadow of the Moon","Crime, Mystery, Sci-Fi",6.2
+"Ride or Die","Drama, Romance, Thriller",5.5
+"Fantasy Island","Action, Adventure, Fantasy",4.9
+"His House","Drama, Horror, Thriller",6.5
+"Madam Secretary","Drama",7.6
+"Gerald's Game","Drama, Horror, Thriller",6.5
+"Läbi tule ja vee","Action, Crime, Drama",7.6
+"The Spy","Drama, History",7.9
+"Z Nation","Action, Comedy, Drama",6.7
+"Poketto monsut<U+00E2>","Animation, Action, Adventure",7.5
+"The Order","Drama, Fantasy, Horror",6.8
+"The Babysitter","Comedy, Horror",6.3
+"Sword Art Online","Animation, Action, Adventure",7.6
+"Geostorm","Action, Sci-Fi, Thriller",5.3
+"Naistevangla","Drama, Thriller",8.2
+"Sweet Home","Drama, Fantasy, Horror",7.4
+"Warrior Nun","Action, Drama, Fantasy",6.8
+"Step Up","Crime, Drama, Music",6.5
+"Lucy","Action, Sci-Fi, Thriller",6.4
+"Tales of the City","Drama",7.4
+"Kingdom","Action, Drama, Horror",8.4
+"Hunt for the Wilderpeople","Adventure, Comedy, Drama",7.9
+"Deadly Illusions","Drama, Thriller",3.6
+"Happy Valley","Crime, Drama",8.4
+"Sky Rojo","Action, Adventure, Crime",6.4
+"The Society","Drama, Mystery, Sci-Fi",7.1
+"Gilmore Girls: A Year in the Life","Comedy, Drama",7.6
+"The Missing","Crime, Drama, Mystery",8.2
+"Versailles","Biography, Drama, History",7.9
+"Raising Dion","Drama, Sci-Fi",7.2
+"Unbreakable Kimmy Schmidt","Comedy",7.6
+"Printsess Mononoke","Animation, Action, Adventure",8.4
+"Safe","Crime, Drama, Mystery",7.3
+"Vangla valitseja","Crime, Drama, Thriller",7.3
+"Guernsey Kirjandus- ja Kartulikoorepiruka Selts","Drama, Romance, War",7.4
+"Suite Fran<U+00E7>aise","Drama, Romance, Thriller",7
+"Malcolm & Marie","Drama, Romance",6.7
+"Seungriho","Action, Adventure, Drama",6.6
+"Family Reunion","Comedy",6.5
+"Evil","Crime, Drama, Horror",7.7
+"Formula 1: Drive to Survive","Documentary, Sport",8.7
+"Impractical Jokers","Comedy, Reality-TV",8.6
+"Lilo & Stitch","Animation, Adventure, Comedy",7.2
+"Marco Polo","Adventure, Drama, History",8
+"Barbarians","Action, Adventure, Drama",7.2
+"The Kissing Booth","Comedy, Romance",6
+"Hommikueine Tiffany juures","Comedy, Drama, Romance",7.6
+"K<U+00F4>do giasu - Hangyaku no rur<U+00FB>shu: Code Geass - Lelouch of the Rebellion","Animation, Action, Drama",8.6
+"Triple Frontier","Action, Adventure, Crime",6.4
+"Fatal Attraction","Drama, Thriller",6.9
+"Durante la tormenta","Drama, Fantasy, Mystery",7.4
+"Firma","Drama, Mystery, Thriller",6.8
+"Rango","Animation, Adventure, Comedy",7.2
+"The Babysitter: Killer Queen","Comedy, Horror",5.8
+"Ainus ellujäänu","Action, Biography, Drama",7.5
+"Project Power","Action, Crime, Sci-Fi",6
+"Rosemary's Baby","Drama, Horror",8
+"Zwartboek","Drama, Thriller, War",7.7
+"Santa Clarita Diet","Comedy, Horror",7.8
+"Staged","Comedy, Drama",8.6
+"Giri/Haji","Crime, Drama, Mystery",7.9
+"Viimane piir","Action, Crime, Thriller",6.5
+"Why Are You Like This?","Comedy",6.4
+"Footloose","Drama, Music, Romance",6.6
+"Tundmatu","Crime, Sci-Fi, Thriller",6.1
+"Vorstipidu","Animation, Adventure, Comedy",6.1
+"Hachi: A Dog's Tale","Biography, Drama, Family",8.1
+"The Blues Brothers","Action, Adventure, Comedy",7.9
+"Fruits Basket","Animation, Comedy, Drama",8.5
+"Kontakt","Drama, Mystery, Sci-Fi",7.4
+"Collateral","Crime, Drama, Mystery",6.8
+"Turist","Action, Thriller",6
+"Another Life","Adventure, Drama, Mystery",5
+"12 Monkeys","Adventure, Drama, Mystery",7.7
+"Tehisema","Drama, Mystery, Sci-Fi",6.7
+"Laskja","Action, Crime, Thriller",5.8
+"Easy","Comedy",6.9
+"Seutateueob","Comedy, Drama, Romance",8.1
+"Luke Cage","Action, Crime, Drama",7.3
+"Kol","Crime, Horror, Mystery",7.1
+"Südaöö Pariisis","Comedy, Fantasy, Romance",7.7
+"Crazy Ex-Girlfriend","Comedy, Musical",7.8
+"Saikojiman Gwaenchanha","Comedy, Drama, Romance",8.7
+"Ropp vanaisa","Comedy",5.9
+"Murder Mystery","Action, Comedy, Crime",6
+"Space Force","Comedy",6.8
+"Dirilis: Ertugrul","Action, Adventure, Drama",7.9
+"Never Have I Ever","Comedy",7.9
+"Reckoning","Thriller",6.6
+"Climax","Drama, Horror, Music",7
+"Over the Moon","Animation, Adventure, Comedy",6.4
+"Criminal: UK","Crime, Drama, Thriller",7.6
+"The Stand In","Comedy, Drama",4.6
+"Death Note","Anime",9
+"Marvel’s Daredevil","Action, Crime",8.7
+"Leyla and Mecnun","Comedy",9.2
+"Money Heist (La casa de papel)","Crime, Thriller",8.6
+"Marvel’s The Punisher","Action, Crime",8.6
+"Fullmetal Alchemist: Brotherhood","Anime",9.1
+"One Punch Man","Anime",9
+"Monty Python’s Flying Circus","Comedy",8.9
+"Paranormal (Ma Waraa Al Tabiaa)","Horror",9.2
+"College Romance","Comedy, Romance",9.1
+"MindHunter","Crime, Drama",8.7
+"Marvel’s Jessica Jones","Action, Fantasy",8.2
+"Ash vs. Evil Dead","Action, Comedy, Horror",8.6
+"Humsafar","Drama, Romance",9.1
+"Zindagi Gulzar Hai","Romance",9
+"The Assassination of Gianni Versace","Crime, Drama",8.5
+"DOTA: Dragon’s Blood","Action, Anime",8.4
+"The Originals","Fantasy, Horror",8.3
+"Young Justice","Animation, Family",8.7
+"46","Crime, Drama",8.7
+"How to Sell Drugs Online (Fast)","Comedy, Crime",8.6
+"Neon Genesis Evangelion","Action, Anime",8.6
+"Pablo Escobar, el patron del mal","Crime, Drama",8.6
+"The Dark Crystal: Age of Resistance","Adventure, Family, Fantasy",8.5
+"Queer Eye","Reality TV",8.6
+"Dirk Gently’s Holistic Detective Agency","Comedy, Fantasy",8.3
+"Erased","Action, Anime",8.6
+"Anne with an E","Drama",8.5
+"Code Geass: Lelouch of the Rebellion","Action, Anime",8.6
+"Borgen","Drama",8.5
+"Puffin Rock","Animation, Family",9
+"Derek","Comedy, Drama",8
+"Lilyhammer","Crime, Drama",8
+"Our Planet","Documentary, Family",9.8
+"David Attenborough: A Life on Our Planet","Documentary",9.2
+"Making a Murderer","Crime, Documentary",8.7
+"The Last Dance","Documentary, Sport",9.7
+"Beasts of No Nation","Drama, War",7.8
+"Klaus","Animation, Family",8.2
+"Dave Chappelle: Sticks and Stones","Comedy, Stand-Up Comedy",8.5
+"Dragons: Race to the Edge","Animation, Family",8.5
+"Okja","Action, Adventure, Sci-Fi",8
+"F is for Family","Animation, Comedy",8
+"Happy!","Comedy, Crime, Fantasy",8.3
+"Divines","Drama",7.5
+"ROMA","Drama",8
+"Trollhunters","Animation, Family",8.5
+"The Fundamentals of Caring","Comedy, Drama",7.4
+"Black Mirror: Bandersnatch","Mystery, Sci-Fi, Thriller",7.4
+"The Get Down","Drama, Music",8.4
+"Voltron: Legendary Defender","Animation, Family",8.4
+"Aunty Donna’s Big Ol’ House of Fun","Comedy",8.8
+"Don’t F**k with Cats: Hunting an Internet Killer","Crime, Documentary",8.1
+"Nobel","Thriller",8.3
+"Mosul","Action, War",7.3
+"The Seven Deadly Sins","Anime",8.3
+"Carmen Sandiego","Animation, Family",8.3
+"The Siege of Jadotville","Drama, War",7.3
+"13TH","Crime, Documentary",8.2
+"American Vandal","Drama",8.2
+"Julie’s Greenroom","Family",8.7
+"If Anything Happens I Love You","Drama",8.1
