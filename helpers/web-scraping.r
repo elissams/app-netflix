@@ -120,7 +120,7 @@ all_ratings <- c()
 for(i in 1:10){ #taking only 500 first titles
   
   html_number <- ((i-1)*50)+1
-  print(html_number)
+  #print(html_number)
   if(i == 1){
     html_imdb <- paste(html_start, html_end1, sep = "")
   }else{
@@ -255,3 +255,5 @@ bestmovies_table <- bestmovies_table %>% left_join(imdb_table2) %>% select(title
 bestTVshows_table <- bestTVshows_table %>% 
   left_join(imdb_table2)
 bestTVshows_table <- bestTVshows_table[, c(1, 4, 2, 5, 3)]
+
+save(newonnetflix_table, bestnetflixoriginals_table, bestTVshows_table, bestmovies_table, imdb_table2, file = "Netflix_data.RData")
