@@ -244,7 +244,7 @@ bestnetflixoriginals_table <- bestnetflixoriginals_table %>%
   left_join(imdb_table2)
 
 bestmovies_table <- bestmovies_table %>% 
-  left_join(imdb_table2)
+  left_join(imdb_table2) %>% select(title, year)
 
 bestTVshows_table <- bestTVshows_table %>% 
   left_join(imdb_table2)

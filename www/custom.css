@@ -7,7 +7,7 @@
 }
 
 #sidebarCollapsed {
-  position: fixed;
+  position: absolute;
   top: 50px;
 }
 
@@ -21,4 +21,17 @@
 
 .content-wrapper {
   background-color: #222324;
+}
+
+.box.box-solid.box-primary>.box-header {
+color:#fff;
+background:#222d32
+}
+
+.box.box-solid.box-primary{
+border-bottom-color:#222d32;
+border-left-color:#222d32;
+border-right-color:#222d32;
+border-top-color:#222d32;
+background:#222d32
 }
