@@ -4,10 +4,24 @@
 library(shiny)
 library(shinydashboard)
 library(DT)
-<<<<<<< HEAD
 
-=======
->>>>>>> 8e289d6420bfc2d485888f89eb3441461d2219ed
+# tutvustav tekst
+
+
+tekst <- div(class = "tutv-text", 
+             h1("Netflixi andmete kraapimine ja visualiseerimine"),
+             p("Projekti eesmärk oli õppida andmete kraapimist veebist ja teha saadud andmetest Shiny rakendus."),
+             p("Rakenduse loomiseks on andmed kraabitud rvest paketi abil kahelt erinevalt veebileheküljelt: FlixWatch ja IMDb (Internet Movie Database).
+                    FlixWatch on mitteametlik Netflixi sisu otsida võimaldav veebileht, kus on võimalik leida infot erinevate riikide Netfllixis näidatava sisu kohta.
+                    Andmetena on kasutatud Eestis näidatavat sisu ehk 100 värskemat Netflixi ilmunud filmi/sarja, 100 kõrgeimalt hinnatud Netflixi originaal sisu ja 100 kõrgeimalt hinnatud telesarja Eestis.
+                    Need sarjade/filmide nimed on kokku viidud IMDb veebilehelt saadud IMDb hinnangute ja filmižanri märksõnadega, et oleks võimalik sisu filtreerida."),
+             p("Tabelites on enamasti 5 veegu: sisu nimi, žanrid, ilmumisaasta, IMDb kasutajate hinnang ja populaarsuse positsioon Eestis. Positsioon puudub ainult värkeima sisu tabelist."),
+             p("Kasutatud veebilehed:"),
+             p("FlixWatch lehekülg: https://www.flixwatch.co/country/estonia"),
+             p("IMDB lehekülg: https://www.imdb.com/search/title/?companies=co0144901&ref_=adv_prv"),
+p("Tegu on aine Statistiline andmeteadus ja visualiseerimine raames tehtud Shiny projektiga"),
+p("Autorid: Elis Käär ja Kadri Onemar"))
+
 
 
 #title logo
@@ -40,46 +54,44 @@ shinyUI(
             tabItem(tabName = 'netflix',
                 fluidRow(
                     column( width = 6,
-                    box(
-                        solidHeader = T, width = 600, background ="black",
+                    box( width = NULL,
+                         background ="black",
                             div(img(src="diivan.jpg", width = 600)),
-                        div(class = "tutv-text", 
-                            p("Andmed on saadud veebikraapimise teel kahelt erinevalt veebilehelt: FlixWatch ja IMDB."),
-                            p("FlixWatch lehekülg: https://www.flixwatch.co/"),
-                            p("IMDB lehekülg: https://www.imdb.com/search/title/?companies=co0144901&ref_=adv_prv"))
-                            p("Netflix"), 
-                            p("Tegu on aine Statistiline andmeteadus ja visualiseerimine raames tehtud Shiny projektiga"),
-                            p("Autorid: Elis Käär ja Kadri Onemar"))
+                        tekst
                         )
                     ),
-                    box(solidHeader = T, background ="black",
-                        title = "Eesti Netflixi filmide pingerida IMDB järgi",
-                        dataTableOutput("movies_table")
+                    column(width = 6,
+                        box(width = NULL,solidHeader = T, background ="black",
+                            title = "Eesti Netflixi filmide pingerida IMDB järgi",
+                            dataTableOutput("movies_table")
+                        )
                     )
-                )
-            ),
+                )),
             
         # netflix originaalid
             tabItem(
                 tabName = 'originals',
                 fluidRow(
-                    column(width = 5,
+                    column(width = 6,
                            box( width = NULL, background ="black",
                                h1("Parimad Netflixi originaalsed filmid ja TV-seriaalid")
                                
                            ),
-                           box(width = NULL, background ="black",
-                               verbatimTextOutput("hover_info")
+                           box(width = NULL, height = 800, background ="black",
+                               plotOutput('origline')
                            )
                         
                     ),
-                    column(width = 7,
-                           box(width = NULL, background ="black",
-                               plotOutput('origtime', hover = hoverOpts(id = "plot_hover"))
+                    column(width = 6,
+                           box(width = NULL, background ="black", title = "Sarjade ja filmide keskmised aastate lõikes",
+                               plotOutput('origtime')
                            ),
-                            box(width = NULL, background ="black",
-                                plotOutput('origline')
-                            )
+                           box(width = NULL, background ="black",
+                               
+                           ),
+                           box(width = NULL, background ="black",
+                               sliderInput("top", "Vali aastate vahemik", min=2013, max=2021, value=c(2013,2021), dragRange = TRUE)
+                           )
                     )
                 )
             ),
@@ -110,7 +122,8 @@ shinyUI(
             )
         )
     )
-))
+)
+)
 # 
 #         tabItems(
 #             tabItem(
