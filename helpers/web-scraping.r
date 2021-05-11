@@ -37,8 +37,10 @@ newonnetflix_table <- newonnetflix_table %>%
   mutate(genres = trimws(genres, which = c("both", "left", "right"), whitespace = "[ \t\r\n]")) %>% #clean string
   mutate(genres = gsub("[\r\n\t]", "", genres)) %>% #clean string
   mutate_at("year", as.numeric) %>% 
-  mutate_at("rating", as.numeric) 
+  mutate_at("rating", as.numeric) %>% 
+  select(-4)
 
+newonnetflix_table <- newonnetflix_table[, c(1, 4, 2, 3)]
 
 
 #100 Best IMDB Rated Netflix Originals in Estonia ----
@@ -242,9 +244,14 @@ imdb_table2 <- imdb_table2 %>%
 
 bestnetflixoriginals_table <- bestnetflixoriginals_table %>% 
   left_join(imdb_table2)
+bestnetflixoriginals_table <- bestnetflixoriginals_table[, c(1, 4, 2, 5, 3)]
 
-bestmovies_table <- bestmovies_table %>% 
-  left_join(imdb_table2) %>% select(title, year)
+bestmovies_table <- bestmovies_table %>% left_join(imdb_table2) %>% select(title, year)
+
+#   left_join(imdb_table2)
+# bestmovies_table <- bestmovies_table[, c(1, 4, 2, 5, 3)]
+
 
 bestTVshows_table <- bestTVshows_table %>% 
   left_join(imdb_table2)
+bestTVshows_table <- bestTVshows_table[, c(1, 4, 2, 5, 3)]

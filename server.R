@@ -7,6 +7,7 @@ library(tidyverse)
 library(devtools)
 install_github("nsgrantham/ggdark")
 library(ggdark)
+library(DT)
 
 ## parimad netflixi originaalid ----
 
@@ -37,23 +38,36 @@ tvline <- ggplot(bestTVshows_table, aes(reorder(title, -rating), rating)) +
 
 # Define server logic
 shinyServer(function(input, output, session) {
+  
+  output$NewonNetflix_table = renderDataTable({
+    datatable(newonnetflix_table, colnames = c("Title" = "title", "Year" = "year", "IMDB rating" = "rating", "Genre" = "genres"), filter = "top") 
+  })
 
-    output$movies_table = renderDataTable({
-        datatable(bestmovies_table, colnames = c("Title" = "title", "Year" = "year"), filter = "top") 
+
+output$movies_table = renderDataTable({
+    datatable(bestmovies_table, colnames = c("Title" = "title", "Year" = "year"), filter = "top")}) 
+
+output$TV_table = renderDataTable({
+datatable(bestTVshows_table, colnames = c("Title" = "title", "Year" = "year", "IMDB rating" = "rating", "Genre" = "genre"), filter = "top") 
+})
+
+output$original_table = renderDataTable({
+datatable(bestnetflixoriginals_table, colnames = c("Title" = "title", "Year" = "year", "IMDB rating" = "rating", "Genre" = "genre"), filter = "top")
+
     })
     
-    output$hover_info <- renderPrint({
-        if(!is.null(input$plot_hover)){
-            hover=input$plot_hover
-            dist=sqrt((hover$x-mtcars$mpg)^2+(hover$y-mtcars$disp)^2)
-            if(min(dist) < 3)
-                mtcars$wt[which.min(dist)]
-        }})
-        
+output$hover_info <- renderPrint({
+    if(!is.null(input$plot_hover)){
+        hover=input$plot_hover
+        dist=sqrt((hover$x-mtcars$mpg)^2+(hover$y-mtcars$disp)^2)
+        if(min(dist) < 3)
+            mtcars$wt[which.min(dist)]
+    }})
     
-    output$origline <- renderPlot({origline})
-    
-    output$origtime <- renderPlot({origtime})
-    
-    output$tvline <- renderPlot({tvline})
+
+output$origline <- renderPlot({origline})
+
+output$origtime <- renderPlot({origtime})
+
+output$tvline <- renderPlot({tvline})
 })

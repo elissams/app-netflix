@@ -4,7 +4,10 @@
 library(shiny)
 library(shinydashboard)
 library(DT)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8e289d6420bfc2d485888f89eb3441461d2219ed
 
 
 #title logo
@@ -22,12 +25,14 @@ shinyUI(
             menuItem("NETFLIX", tabName = "netflix", icon = icon("tv")),
             menuItem('Parimad Netflixi originaalid', tabName = "originals", icon = icon("chart-line")),
             menuItem("Parimad TV-seriaalid", tabName = "tv", icon = icon("star"))
+
         )
     ),
     dashboardBody(
         tags$head(
             tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
         ),
+
         # tabs
         
         #netflix general
@@ -38,8 +43,13 @@ shinyUI(
                     box(
                         solidHeader = T, width = 600, background ="black",
                             div(img(src="diivan.jpg", width = 600)),
-                        div(class = "tutv-text", p("Netflix"), p("Tegu on aine Statistiline andmeteadus ja visualiseerimine raames tehtud Shiny projektiga"),
-                                    p("Autorid: Elis Käär ja Kadri Onemar"))
+                        div(class = "tutv-text", 
+                            p("Andmed on saadud veebikraapimise teel kahelt erinevalt veebilehelt: FlixWatch ja IMDB."),
+                            p("FlixWatch lehekülg: https://www.flixwatch.co/"),
+                            p("IMDB lehekülg: https://www.imdb.com/search/title/?companies=co0144901&ref_=adv_prv"))
+                            p("Netflix"), 
+                            p("Tegu on aine Statistiline andmeteadus ja visualiseerimine raames tehtud Shiny projektiga"),
+                            p("Autorid: Elis Käär ja Kadri Onemar"))
                         )
                     ),
                     box(solidHeader = T, background ="black",
@@ -101,3 +111,45 @@ shinyUI(
         )
     )
 ))
+# 
+#         tabItems(
+#             tabItem(
+#                 "New",
+#                 box(width = 12,
+#                     solidHeader = T,
+#                     color = "maroon",
+#                     title = "New on Netflix in Estonia",
+#                     dataTableOutput("NewonNetflix_table")),
+#                 ),
+#             tabItem(
+#                 "TV",
+#                 box(width = 12,
+#                     solidHeader = T,
+#                     color = "maroon",
+#                     title = "100 Best TV Shows in Estonia",
+#                     dataTableOutput("TV_table")),
+#                 ),
+#             tabItem(
+#                 "Originaalid",
+#                 box(width = 12,
+#                     solidHeader = T,
+#                     color = "maroon",
+#                     title = "100 Best Netflix Originals in Estonia",
+#                     dataTableOutput("original_table")),
+#                 ),
+#             tabItem(
+#                 "About",
+#                 box(width = 12,
+#                     solidHeader = T,
+#                     status = "danger",
+#                     title = "About data",
+#                     p("Andmed on saadud veebikraapimise teel kahelt erinevalt veebilehelt: FlixWatch ja IMDB."),
+#                     p("FlixWatch lehekülg: https://www.flixwatch.co/"),
+#                     p("IMDB lehekülg: https://www.imdb.com/search/title/?companies=co0144901&ref_=adv_prv")),
+#                 )
+#                 
+#             )
+#         )
+#     )
+# )
+# 
